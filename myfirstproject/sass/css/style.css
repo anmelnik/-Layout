@@ -1,0 +1,30 @@
+body {
+  padding: 30px;
+}
+
+.link {
+  border-bottom: 5px dashed red;
+  font-size: 100px;
+}
+
+.block {
+  font-size: 30px;
+  line-height: 20px;
+}
+
+.block span {
+  color: red;
+}
+
+.block .block-text {
+  font-size: 80px;
+}
+
+.link {
+  color: aqua;
+  margin: 220px 220px 220px 220px;
+}
+
+.link:hover {
+  color: black;
+}
