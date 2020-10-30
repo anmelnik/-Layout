@@ -1,5 +1,6 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
+    /* min-width: 1200px; */
 }
 .wrapper {
     min-height: 100%;
@@ -9,9 +10,12 @@ body {
     flex-direction: column;
 }
 .container {
-    max-width: 1180px;
+    max-width: 1200px;
     margin: 0px auto;
 }
+
+
+
 .content {
     flex: 1 1 auto;
 }
@@ -31,13 +35,11 @@ body {
     font-size: 60px;
     margin: 0px 0px 38px 0px;
 }
-.hi__list {}
+
 .hi__list ol {
     background: url(img1.png) left no-repeat;
     text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
     font-size: 17px;
-}
-.hi__image {
 }
 
 .hi__image img {
@@ -75,9 +77,6 @@ body {
     margin: 0px 0px 33px 0px;
 }
 
-.what__text {
-}
-
 .what__text p {
     margin: 0px 0px 25px 0px;
     color: #595f5d;
@@ -105,10 +104,6 @@ body {
     flex: 0 1 50%;
     margin: 0px 0px 30px 0px;
 }
-
-.columns__item {}
-
-.item {}
 
 .item__row {
     display: flex;
