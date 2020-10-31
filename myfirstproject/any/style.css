@@ -1,18 +1,13 @@
-body {
-    text-align: center;
-    padding: 300px;
-}
-
-.button {
+/*.button {
     display: flex;
     text-align: center;
     justify-content: center;
     align-items: center;
     min-height: 60px;
-    padding: 0px 30px;
+    padding: -10px 60px;
     text-transform: uppercase;
     letter-spacing: 2px;
-    font-size: 18px;
+    font-size: 50px;
     position: relative;
     top: 0;
 }
@@ -21,30 +16,25 @@ body {
     color: #fff;
     background-color: #5e5373;
     box-shadow: 0 5px 0px #3c354a;
-    transition-property: all;
+    border-radius: 10px;
+    text-decoration: none;
     transition-duration: 0.5s;
-    transition-delay: 0s;
-    transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 .button_2 {
     color: #fff;
     background-color: #5e5373;
     box-shadow: 0 5px 0px #3c354a;
-    transition-property: all;
-    transition-duration: 0.5s;
-    transition-delay: 0s;
-    transition-timing-function: cubic-bezier(0.75, 0.99, 0.21, 0.01);
+    border-radius: 10px;
+    text-decoration: none;
 }
 
 .button_3 {
     color: #fff;
     background-color: #5e5373;
     box-shadow: 0 5px 0px #3c354a;
-    transition-property: all;
-    transition-duration: 0.5s;
-    transition-delay: 0s;
-    transition-timing-function: cubic-bezier(0.75, -1, 0.21, -1);
+    border-radius: 10px;
+    text-decoration: none;
 }
 
 .button_1:hover {
@@ -60,4 +50,56 @@ body {
 .button_3:hover {
     padding: 0px 50px;
     background-color: #18b5a4;
+}
+*/
+
+body {
+    background-color: black;
+}
+
+.content:hover .content__circle {
+    animation-play-state: paused;
+}
+
+.content__circle {
+    width: 100px;
+    height: 100px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    position: relative;
+    left: 0;
+
+    /*animation-name: white-circle;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-direction:alternate-reverse;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+    */
+    animation: white-circle 2s linear infinite alternate 0s forwards, red-circle 5s ease infinite alternate 0s forwards;
+}
+
+@keyframes white-circle {
+    0% {
+        left: 0;
+    }
+    50% {
+        border-radius: 10px;
+    }
+    100% {
+        left:500px;
+    }
+}
+
+@keyframes red-circle {
+    0% {
+        background-color: #ffffff;
+    }
+    50% {
+        background-color: brown;
+    }
+    100% {
+        background-color: #ffffff;
+    }
 }
