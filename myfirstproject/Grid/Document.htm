@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://127.0.0.1:5500/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+<link rel="stylesheet" href="./Document_files/style.css"></head>
+
+<body>
+    <!-- <header id="pageHeader">Header</header>
+    <article id="mainArticle">Article</article>
+    <nav id="mainNav">Nav</nav> 
+    <div id="siteAds">Ads</div> 
+    <footer id="pageFooter">Footer</footer> -->
+    <h2>Определение сетки</h2>
+    <div id="grid">
+        <div>&nbsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum aspernatur autem optio dolore facere
+            ex non error temporibus ipsum iste, molestias reprehenderit fugit illum adipisci! Ipsum temporibus debitis
+            iure odio.</div>
+        <div>2</div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, doloremque quas. Ipsum architecto,
+            voluptates fuga non sit fugiat. Similique libero corporis soluta omnis laudantium, exercitationem
+            necessitatibus amet officiis unde? Molestias.</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+    <h2>Имена областей</h2>
+    <div class="grid-wrapper">
+        <header class="grid-header">
+            Шапка
+        </header>
+        <aside class="grid-side">
+            Сайдбар
+        </aside>
+        <main class="grid-content">
+            Контент
+        </main>
+    </div>
+    <h2>Неявная сетка</h2>
+    <div class="grid-auto">
+        <div class="grid-auto-item">1</div>
+        <div class="grid-auto-item">2</div>
+        <div class="grid-auto-item">3</div>
+        <div class="grid-auto-item">4</div>
+        <div class="grid-auto-item">5</div>
+        <div class="grid-auto-item">6</div>
+        <div class="grid-auto-item">7</div>
+    </div>
+    <h2>Автоматическое размещение</h2>
+    <div class="grid-masonry">
+        <div class="grid-masonry-item">
+            1
+            <img src="./Document_files/img1.jpg" alt="picter">
+        </div>
+        <div class="grid-masonry-item">
+            2
+            <img src="./Document_files/img1.jpg" alt="picter">
+        </div>
+        <div class="grid-masonry-item">
+            3
+            <img src="./Document_files/img1.jpg" alt="picter">
+        </div>
+        <div class="grid-masonry-item">
+            4
+            <img src="./Document_files/img1.jpg" alt="picter">
+        </div>
+        <div class="grid-masonry-item">
+            5
+            <img src="./Document_files/img1.jpg" alt="picter">
+        </div>
+        <div class="grid-masonry-item"> 
+            6
+            <img src="./Document_files/img1.jpg" alt="picter">
+        </div>
+    </div>
+    <h2>Элименты сетки</h2>
+    <div class="grid">
+        <div class="grid-body">
+            <div class="grid-item">1</div>
+            <span class="grid-item">2</span>
+            <div class="grid-item">3</div>
+            <div class="grid-item">4</div>
+            <span class="grid-item">5</span>
+            <div class="grid-item">6</div>
+        </div>
+    </div>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body></html>
