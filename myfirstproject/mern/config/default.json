@@ -1,5 +1,0 @@
-{
-    "port": 8000,
-    "jwtSecret": "nastya mern",
-    "mongoUri": "mongodb+srv://nastya:1234q@cluster0.e2tv7.mongodb.net/mern?retryWrites=true&w=majority"
-}
